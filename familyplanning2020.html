@@ -128,9 +128,19 @@
       }
 
       /* FULL-WIDTH TABLES */
-      table[class="responsive-table"] {
+      table.responsive-table {
         width: 100%!important;
       }
+
+	  table.responsive-table.schedule-listing td{
+		display: block;
+
+	  }	 
+
+	  table.responsive-table.schedule-listing .event-title,
+	  table.responsive-table.schedule-listing .webinar-title{
+		padding-bottom: 5px !important;		  
+	  }
 
       /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
       td[class="padding"] {
@@ -142,31 +152,31 @@
         text-align: center;
       }
 
+	  /*
       td[class="padding-meta"] {
         padding: 30px 5% 0px 5% !important;
         text-align: center;
-      }
-
-      td[class="no-pad"] {
-        padding: 0 0 20px 0 !important;
-      }
-
+      }*/
+	  
       td[class="no-padding"] {
         padding: 0 !important;
       }
 
+	  /*
       td[class="section-padding"] {
         padding: 50px 15px 50px 15px !important;
-      }
+      }*/
 
+	  /*
       td[class="section-padding-bottom-image"] {
         padding: 50px 15px 0 15px !important;
-      }
+      }*/
 
       /* ADJUST BUTTONS ON MOBILE */
+	  /*
       td[class="mobile-wrapper"] {
         padding: 10px 5% 15px 5% !important;
-      }
+      }*/
 
       table[class="mobile-button-container"] {
         margin: 0 auto;
@@ -179,6 +189,7 @@
         border: 0 !important;
         font-size: 16px !important;
       }
+
     }
 </style>
 <!--	-->
@@ -188,7 +199,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="#404041" class="section-padding" style="padding: 25px 15px 25px 15px;">
+			<td align="center" bgcolor="#4d5ccf" class="section-padding no-padding" style="padding: 25px 15px 25px 15px;">
 			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 0 0;" width="600">
 				<tbody>
 					<tr>
@@ -233,7 +244,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="" class="section-padding" style="padding: 50px 15px 25px 15px; border-bottom: solid 1px #d2d3d5;">
+			<td align="center" bgcolor="" class="section-padding" style="padding: 50px 15px 25px 15px;">
 			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 25px 0;" width="600">
 				<tbody>
 					
@@ -253,10 +264,10 @@
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tbody>
 									<tr>
-										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Lorem ipsum dolor sit amet</td>
 									</tr>
 									<tr>
-										<td align="left" class="padding-meta by-line" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">By Lorem ipsum, dolor sit amet consectetur adipiscing elit</td>
+										<td align="left" class="by-line" style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Introduction By-Line</td>
 									</tr>									
 									<tr>
 										<td align="left" class="padding-copy body-copy" style="padding: 10px 0 5px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec convallis nisl. Sed tempor sagittis arcu vel tempus. Vivamus lacinia lorem nec turpis consectetur vulputate. Sed sodales mauris non lacus laoreet, eu vehicula mi congue. Aenean velit enim, porta nec augue consectetur, luctus finibus arcu. Fusce scelerisque euismod lacinia. Nulla elementum imperdiet augue, id eleifend lorem interdum a. Sed volutpat, nunc auctor dapibus aliquet, erat massa interdum magna, iaculis suscipit arcu lorem et enim. Praesent hendrerit fermentum sodales. Phasellus tempor in odio at pharetra. Ut ac tristique nisi. Cras nibh lorem, maximus sit amet consectetur a, tristique eget mi. Quisque et posuere tortor. Mauris et convallis risus. Duis condimentum placerat porttitor.</td>
@@ -280,69 +291,21 @@
 </table>
 <!-- END SECTION: INTRODUCTION -->
 
-<!-- SECTION: INTRODUCTION -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%"  style="display: none;">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#f3f3f4" class="section-padding" style="padding: 50px 15px 25px 15px;">
-			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 0 0;" width="600">
-				<tbody>
-					
-					<!-- INTRODUCTION IMAGE AND STATEMENT -->	
-					<tr>
-
-						<!-- INTRODUCTION IMAGE -->
-						<td class="mobile-hide" style="padding: 0 0 0 0;" valign="top">
-							<div style="-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; overflow:hidden!important; mso-hide: all;">
-								<a href="#" target="_blank">
-									<img alt="Enter some alt text" border="0" height="200" src="https://via.placeholder.com/200x200/818284/ffffff" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;" width="200" />
-								</a>
-							</div>
-						</td>
-						<!-- END INTRODUCTION IMAGE -->
-
-						<!-- EMD INTRODUCTION STATEMENT -->	
-						<td class="no-padding" style="padding: 0 0 0 0;">
-							<table border="0" cellpadding="0" cellspacing="0" width="100%">
-								<tbody>
-									<tr>
-										<td align="left" class="padding-meta pre-title" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #404041;">Sollicitudin Tellus</td>
-									</tr>
-									<tr>
-										<td align="left" class="padding-copy body-copy" style="padding: 10px 0 0px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</td>
-									</tr>
-									
-								</tbody>
-							</table>
-						</td>
-						<!-- EMD INTRODUCTION STATEMENT -->	
-
-					</tr>
-					<!-- END INTRODUCTION IMAGE AND STATEMENT -->
-
-				</tbody>
-			</table>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<!-- END SECTION: INTRODUCTION -->
-
 <!-- SECTION: TABLE OF CONTENTS -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="#f3f3f4" class="section-padding" style="padding: 50px 15px 25px 15px; border-bottom: solid 1px #d2d3d5;">
+			<td align="center" bgcolor="#b04dcf" class="section-padding" style="padding: 25px 15px 25px 15px;">
 			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 20px 0;" width="600">
 				<tbody>
 					<tr>
 
 						<!-- TABLE OF CONTENTS -->	
-						<td class="no-padding" style="padding: 0 0 0 0;">
+						<td class="" bgcolor="#ffffff" style="padding: 25px 30px 25px 5px; border-top: 5px solid #7f3496; border-right: 5px solid #7f3496; border-bottom: 5px solid #7f3496; border-left: 5px solid #7f3496;">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tbody>
 									<tr>
-										<td align="left" class="padding-copy index-intro" style="padding: 5px 0 10px 25px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #000000;" colspan="2">In This Issue: Exploring FP2020 Partnerships</td>
+										<td align="left" class="padding-copy index-intro" style="padding: 5px 0 10px 25px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #7f3496;" colspan="2">In This Issue: Exploring FP2020 Partnerships</td>
 									</tr>										
 									<tr>
 										<td align="left" class="padding-copy index-count" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none; display: inline-block;">1.</a></td>
@@ -387,7 +350,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="" class="section-padding" style="padding: 25px 15px 25px 15px; border-bottom: solid 1px #d2d3d5;">
+			<td align="center" bgcolor="" class="section-padding" style="padding: 25px 15px 25px 15px;">
 			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 25px 0;" width="600" id="article-1" name="article-1">
 				<tbody>
 					
@@ -403,14 +366,14 @@
 
 					<tr>
 						<!-- ARTICLE 1 COPY AND CTA -->	
-						<td style="padding: 40px 0 0 0;">
+						<td style="padding: 25px 0 25px 0;">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tbody>
 									<tr>
-										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">HIV and Family Planning: Dual Protection Needed</td>
+										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">HIV and Family Planning: Dual Protection Needed</td>
 									</tr>
 									<tr>
-										<td align="left" class="padding-meta by-line" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">By Tamar Abrams, Communications Director for FP2020</td>
+										<td align="left" class="by-line" style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">By Tamar Abrams, Communications Director for FP2020</td>
 									</tr>									
 									<tr>
 										<td align="left" class="padding-copy body-copy" style="padding: 10px 0 25px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Women of reproductive age are disproportionately affected by HIV/AIDS globally, at risk for both unintended pregnancy and HIV infection. So it stands to reason that both issues should be simultaneously addressed by governments, health care providers, advocates, and donors. A burgeoning partnership between the HIV/AIDS and family planning sectors led to a well-attended session at the International AIDS Conference in Amsterdam in late July. The session: “Hormonal Contraception and HIV Risk at the Crossroads: What do the latest research, advocacy, and program developments mean for women, providers, and programs?” was co-chaired by AVAC and FP2020. Panelists, including FP2020 Executive Director Beth Schlachter, addressed the synergies of HIV and unintended pregnancy prevention as well as questions about the ECHO trial results expected in 2019.</td>
@@ -426,11 +389,11 @@
 													<table border="0" cellpadding="0" cellspacing="0" class="mobile-button-container" width="100%">
 														<tbody>
 															<tr>
-																<td align="center" class="padding-copy" style="padding: 0 0 15px 0;">
+																<td align="center" class="padding-copy" style="padding: 0 0 25px 0;">
 																<table border="0" cellpadding="0" cellspacing="0" class="responsive-table">
 																	<tbody>
 																		<tr>
-																			<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #1f3366; border-top: 10px solid #1f3366; border-bottom: 10px solid #1f3366; border-left: 20px solid #1f3366; border-right: 20px solid #1f3366; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
+																			<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #4d5ccf; border-top: 10px solid #4d5ccf; border-bottom: 10px solid #4d5ccf; border-left: 20px solid #4d5ccf; border-right: 20px solid #4d5ccf; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
 																		</tr>
 																	</tbody>
 																</table>
@@ -464,7 +427,7 @@
 						<!-- ARTICLE 2 IMAGE -->
 						<td class="article-image" style="padding: 40px 0 0 0;" valign="top">
 							<a href="#" target="_blank">
-								<img alt="Enter some alt text" class="img-max" border="0" height="400" src="https://via.placeholder.com/600x400/818284/ffffff" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 600px; height: 400px;" width="600" />
+								<img alt="Enter some alt text" class="img-max" border="0" height="400" src="images/article-2.jpg" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 600px; height: 400px;" width="600" />
 							</a>
 						</td>
 						<!-- END ARTICLE 2 IMAGE -->
@@ -472,14 +435,14 @@
 
 					<tr>
 						<!-- ARTICLE 2 COPY AND CTA -->	
-						<td style="padding: 40px 0 0 0;">
+						<td style="padding: 25px 0 25px 0;">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tbody>
 									<tr>
-										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 2</td>
+										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 2</td>
 									</tr>
 									<tr>
-										<td align="left" class="padding-meta by-line" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 2</td>
+										<td align="left" class="by-line" style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 2</td>
 									</tr>									
 									<tr>
 										<td align="left" class="padding-copy body-copy" style="padding: 10px 0 25px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, <a href="#">eget lacinia odio sem nec elit</a>. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</td>
@@ -495,11 +458,11 @@
 													<table border="0" cellpadding="0" cellspacing="0" class="mobile-button-container" width="100%">
 														<tbody>
 															<tr>
-																<td align="center" class="padding-copy" style="padding: 0 0 15px 0;">
+																<td align="center" class="padding-copy" style="padding: 0 0 25px 0;">
 																<table border="0" cellpadding="0" cellspacing="0" class="responsive-table">
 																	<tbody>
 																		<tr>
-																			<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #1f3366; border-top: 10px solid #1f3366; border-bottom: 10px solid #1f3366; border-left: 20px solid #1f3366; border-right: 20px solid #1f3366; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
+																			<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #4d5ccf; border-top: 10px solid #4d5ccf; border-bottom: 10px solid #4d5ccf; border-left: 20px solid #4d5ccf; border-right: 20px solid #4d5ccf; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
 																		</tr>
 																	</tbody>
 																</table>
@@ -534,7 +497,7 @@
 						<!-- ARTICLE 3 IMAGE -->
 						<td class="article-image" style="padding: 40px 0 0 0;" valign="top">
 							<a href="#" target="_blank">
-								<img alt="Enter some alt text" class="img-max" border="0" height="400" src="https://via.placeholder.com/600x400/818284/ffffff" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 600px; height: 400px;" width="600" />
+								<img alt="Enter some alt text" class="img-max" border="0" height="400" src="images/article-3.jpg" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 600px; height: 400px;" width="600" />
 							</a>
 						</td>
 						<!-- END ARTICLE 3 IMAGE -->
@@ -542,14 +505,14 @@
 
 					<tr>
 						<!-- ARTICLE 3 COPY AND CTA -->	
-						<td style="padding: 40px 0 0 0;">
+						<td style="padding: 25px 0 25px 0;">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tbody>
 									<tr>
-										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 3</td>
+										<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 3</td>
 									</tr>
 									<tr>
-										<td align="left" class="padding-meta by-line" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 3</td>
+										<td align="left" class="by-line" style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 3</td>
 									</tr>									
 									<tr>
 										<td align="left" class="padding-copy body-copy" style="padding: 10px 0 25px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, <a href="#">eget lacinia odio sem nec elit</a>. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</td>
@@ -565,11 +528,11 @@
 													<table border="0" cellpadding="0" cellspacing="0" class="mobile-button-container" width="100%">
 														<tbody>
 															<tr>
-																<td align="center" class="padding-copy" style="padding: 0 0 15px 0;">
+																<td align="center" class="padding-copy" style="padding: 0 0 25px 0;">
 																<table border="0" cellpadding="0" cellspacing="0" class="responsive-table">
 																	<tbody>
 																		<tr>
-																			<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #1f3366; border-top: 10px solid #1f3366; border-bottom: 10px solid #1f3366; border-left: 20px solid #1f3366; border-right: 20px solid #1f3366; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
+																			<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #4d5ccf; border-top: 10px solid #4d5ccf; border-bottom: 10px solid #4d5ccf; border-left: 20px solid #4d5ccf; border-right: 20px solid #4d5ccf; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
 																		</tr>
 																	</tbody>
 																</table>
@@ -612,14 +575,14 @@
 	
 						<tr>
 							<!-- ARTICLE 4 COPY AND CTA -->	
-							<td style="padding: 40px 0 0 0;">
+							<td style="padding: 25px 0 25px 0;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tbody>
 										<tr>
-											<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 4</td>
+											<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 4</td>
 										</tr>
 										<tr>
-											<td align="left" class="padding-meta by-line" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 4</td>
+											<td align="left" class="by-line" style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 4</td>
 										</tr>									
 										<tr>
 											<td align="left" class="padding-copy body-copy" style="padding: 10px 0 25px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, <a href="#">eget lacinia odio sem nec elit</a>. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</td>
@@ -635,11 +598,11 @@
 														<table border="0" cellpadding="0" cellspacing="0" class="mobile-button-container" width="100%">
 															<tbody>
 																<tr>
-																	<td align="center" class="padding-copy" style="padding: 0 0 15px 0;">
+																	<td align="center" class="padding-copy" style="padding: 0 0 25px 0;">
 																	<table border="0" cellpadding="0" cellspacing="0" class="responsive-table">
 																		<tbody>
 																			<tr>
-																				<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #1f3366; border-top: 10px solid #1f3366; border-bottom: 10px solid #1f3366; border-left: 20px solid #1f3366; border-right: 20px solid #1f3366; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
+																				<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #4d5ccf; border-top: 10px solid #4d5ccf; border-bottom: 10px solid #4d5ccf; border-left: 20px solid #4d5ccf; border-right: 20px solid #4d5ccf; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -682,14 +645,14 @@
 	
 						<tr>
 							<!-- ARTICLE 5 COPY AND CTA -->	
-							<td style="padding: 40px 0 0 0;">
+							<td style="padding: 25px 0 25px 0;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tbody>
 										<tr>
-											<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 5</td>
+											<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 5</td>
 										</tr>
 										<tr>
-											<td align="left" class="padding-meta by-line" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 5</td>
+											<td align="left" class="by-line" style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 5</td>
 										</tr>									
 										<tr>
 											<td align="left" class="padding-copy body-copy" style="padding: 10px 0 25px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, <a href="#">eget lacinia odio sem nec elit</a>. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</td>
@@ -705,11 +668,11 @@
 														<table border="0" cellpadding="0" cellspacing="0" class="mobile-button-container" width="100%">
 															<tbody>
 																<tr>
-																	<td align="center" class="padding-copy" style="padding: 0 0 15px 0;">
+																	<td align="center" class="padding-copy" style="padding: 0 0 25px 0;">
 																	<table border="0" cellpadding="0" cellspacing="0" class="responsive-table">
 																		<tbody>
 																			<tr>
-																				<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #1f3366; border-top: 10px solid #1f3366; border-bottom: 10px solid #1f3366; border-left: 20px solid #1f3366; border-right: 20px solid #1f3366; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
+																				<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #4d5ccf; border-top: 10px solid #4d5ccf; border-bottom: 10px solid #4d5ccf; border-left: 20px solid #4d5ccf; border-right: 20px solid #4d5ccf; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -752,14 +715,14 @@
 	
 						<tr>
 							<!-- ARTICLE 6 COPY AND CTA -->	
-							<td style="padding: 40px 0 0 0;">
+							<td style="padding: 25px 0 25px 0;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tbody>
 										<tr>
-											<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 6</td>
+											<td align="left" class="padding-copy title" style="padding: 0 0 5px 25px; font-size: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #404041;">Article Title 6</td>
 										</tr>
 										<tr>
-											<td align="left" class="padding-meta by-line" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 6</td>
+											<td align="left" class="by-line" style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;">Article By-Line 6</td>
 										</tr>									
 										<tr>
 											<td align="left" class="padding-copy body-copy" style="padding: 10px 0 25px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, <a href="#">eget lacinia odio sem nec elit</a>. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</td>
@@ -775,11 +738,11 @@
 														<table border="0" cellpadding="0" cellspacing="0" class="mobile-button-container" width="100%">
 															<tbody>
 																<tr>
-																	<td align="center" class="padding-copy" style="padding: 0 0 15px 0;">
+																	<td align="center" class="padding-copy" style="padding: 0 0 25px 0;">
 																	<table border="0" cellpadding="0" cellspacing="0" class="responsive-table">
 																		<tbody>
 																			<tr>
-																				<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #1f3366; border-top: 10px solid #1f3366; border-bottom: 10px solid #1f3366; border-left: 20px solid #1f3366; border-right: 20px solid #1f3366; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
+																				<td align="center"><a class="mobile-button" href="#" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #4d5ccf; border-top: 10px solid #4d5ccf; border-bottom: 10px solid #4d5ccf; border-left: 20px solid #4d5ccf; border-right: 20px solid #4d5ccf; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" target="_blank">Learn More &rarr;</a></td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -816,58 +779,58 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="#f3f3f4" class="section-padding" style="padding: 50px 15px 25px 15px; border-bottom: solid 1px #d2d3d5;">
+			<td align="center" bgcolor="#b04dcf" class="section-padding" style="padding: 25px 15px 50px 15px;">
 			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 20px 0;" width="600">
 				<tbody>
 					<tr>
 
 						<!-- FEATURED RESOURCES -->	
-						<td class="no-padding" style="padding: 0 0 0 0;">
+						<td class="" bgcolor="#ffffff" style="padding: 25px 30px 25px 5px; border-top: 5px solid #7f3496; border-right: 5px solid #7f3496; border-bottom: 5px solid #7f3496; border-left: 5px solid #7f3496;">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tbody>
 									<tr>
-										<td align="left" class="padding-copy resource-intro" style="padding: 5px 0 25px 25px; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #000000;" colspan="2">Featured Resources</td>
+										<td align="left" class="padding-copy resource-intro" style="padding: 5px 0 25px 25px; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #7f3496;" colspan="2">Featured Resources</td>
 									</tr>										
 									<tr>
 										<td style="padding-bottom: 15px;">
-											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Resource Title</div>
+											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Resource Title</div>
 											<div class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 										</td>
 									</tr>	
 									<tr>
 										<td style="padding-bottom: 15px;">
-											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Resource Title</div>
+											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Resource Title</div>
 											<div class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 											<div class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 										</td>
 									</tr>		
 									<tr>
 										<td style="padding-bottom: 15px;">
-											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Resource Title</div>
+											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Resource Title</div>
 											<div class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 										</td>
 									</tr>
 									<tr>
 										<td style="padding-bottom: 15px;">
-											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Resource Title</div>
+											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Resource Title</div>
 											<div class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 										</td>
 									</tr>	
 									<tr>
 										<td style="padding-bottom: 15px;">
-											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Resource Title</div>
+											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Resource Title</div>
 											<div class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 										</td>
 									</tr>
 									<tr>
 										<td style="padding-bottom: 15px;">
-											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Resource Title</div>
+											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Resource Title</div>
 											<p class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 										</td>
 									</tr>	
 									<tr>
 										<td style="padding-bottom: 15px;">
-											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Resource Title</div>
+											<div class="padding-copy resource-title" style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Resource Title</div>
 											<div class="padding-copy resource-body"  style="padding: 5px 0 5px 25px; margin: 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;"><a href="#article-1" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Duis mollis, est non commodo luctus</a></div>
 										</td>
 									</tr>	
@@ -889,57 +852,57 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="" class="section-padding" style="padding: 50px 15px 25px 15px; border-bottom: solid 1px #d2d3d5;">
-			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 20px 0;" width="600">
+			<td align="center" bgcolor="#4dcfbe" class="section-padding" style="padding: 50px 15px 25px 15px;">
+			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table schedule-listing" style="padding:0 0 20px 0;" width="600">
 				<tbody>
 					<tr>
 
 						<!-- UPCOMING EVENTS -->	
-						<td class="no-padding" style="padding: 0 0 0 0;">
+						<td class="" bgcolor="#ffffff" style="padding: 25px 30px 25px 5px; border-top: 5px solid #3aa093; border-right: 5px solid #3aa093; border-bottom: 5px solid #3aa093; border-left: 5px solid #3aa093;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tbody>
 										<tr>
-											<td align="left" class="padding-copy event-section-title" style="padding: 5px 0 25px 25px; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #000000;" colspan="2">Upcoming Events</td>
+											<td align="left" class="padding-copy event-section-title" style="padding: 5px 0 25px 25px; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #3aa093;" colspan="2">Upcoming Events</td>
 										</tr>																				
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">FP2020 Family Planning for Women and Girls Affected by Crises: Improving Washington, DC Strategic Engagement</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 18-19<br>Washington, DC</a></td>
 										</tr>		
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">73 United Nations General Assembly</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 25-28<br>New York, New York</a></td>
 										</tr>
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">World Data Forum</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">October 22-24<br>Dubai, United Arab Emirates</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>		
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>		
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing elitg</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy event-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></td>
+											<td align="left" width="200" class="padding-copy event-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>																																
 									</tbody>
 								</table>
@@ -959,57 +922,57 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="#f3f3f4" class="section-padding" style="padding: 50px 15px 25px 15px; border-bottom: solid 1px #d2d3d5;">
-			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="padding:0 0 20px 0;" width="600">
+			<td align="center" bgcolor="#4dcfbe" class="section-padding" style="padding: 25px 15px 50px 15px;">
+			<table border="0" cellpadding="0" cellspacing="0" class="responsive-table schedule-listing" style="padding:0 0 20px 0;" width="600">
 				<tbody>
 					<tr>
 
 						<!-- UPCOMING WEBINARS -->	
-						<td class="no-padding" style="padding: 0 0 0 0;">
+						<td class="" bgcolor="#ffffff" style="padding: 25px 30px 25px 5px; border-top: 5px solid #3aa093; border-right: 5px solid #3aa093; border-bottom: 5px solid #3aa093; border-left: 5px solid #3aa093;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tbody>
 										<tr>
-											<td align="left" class="padding-copy webinar-section-title" style="padding: 5px 0 25px 25px; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #000000;" colspan="2">Upcoming Webinars</td>
+											<td align="left" class="padding-copy webinar-section-title" style="padding: 5px 0 25px 25px; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #3aa093;" colspan="2">Upcoming Webinars</td>
 										</tr>																				
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>		
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>		
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>		
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>	
-										<tr style="padding-bottom: 15px">
-											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
-											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 5px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
+										<tr>
+											<td align="left" class="padding-copy webinar-title" style="padding: 5px 15px 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041;">Performance, Monitoring & Evidence Working Group Meeting</a></td>
+											<td align="left" width="200" class="padding-copy webinar-details" style="padding: 5px 0 20px 25px; font-size: 16px; vertical-align: top;"><a href="#" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none;">September 5-7<br>Washington, DC</a></td>
 										</tr>																																
 									</tbody>
 								</table>
@@ -1084,29 +1047,29 @@
 
 							<tr> 
 								<td style="padding: 0 0 5px 0;">
-										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Family Planning 2020</div>
+										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Family Planning 2020</div>
 								</td>
 							</tr>
 
 							<tr> 
 								<td style="padding: 0 0 5px 0;">
-										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;"><a href="mailto:info@familyplanning2020.org" alt="Mail to: info@familyplanning2020.org">info@familyplanning2020.org</a></div>
+										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;"><a href="mailto:info@familyplanning2020.org" alt="Mail to: info@familyplanning2020.org">info@familyplanning2020.org</a></div>
 								</td>
 							</tr>	
 							
 							<tr> 
 								<td style="padding: 0 0 5x 0;">
-										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Washington, DC 20006</div>
+										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">Washington, DC 20006</div>
 								</td>
 							</tr>	
 							<tr> 
 								<td style="padding: 0 0 15px 0;">
-										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">United States</div>
+										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;">United States</div>
 								</td>
 							</tr>	
 							<tr> 
 								<td style="padding: 0 0 0 0;">
-										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;"><a href="#" alt="Unsubscribe" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none; display: inline-block;">unsubscribe</a></div>
+										<div style="padding: 5px 25px 5px 25px; text-align: center; font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #666666;"><a href="#" alt="Unsubscribe" style="line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #404041; text-decoration: none; display: inline-block;">unsubscribe</a></div>
 								</td>
 							</tr>									
 						</tbody>
